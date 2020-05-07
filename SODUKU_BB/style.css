@@ -1,0 +1,16 @@
+.T{
+    background-color: pink;
+    text-align: center;
+    color: white;
+}
+
+.sdt{
+    border: black 3px solid;
+    border-collapse: separate;
+    table-layout: fixed;
+    width: 360px;
+    height: 360px;
+    background-image: url(sky.jpg);
+    vertical-align: middle;
+    text-align: center;
+}
