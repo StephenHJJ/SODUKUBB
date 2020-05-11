@@ -13,7 +13,7 @@ function clc(){
         document.getElementsByTagName("input")[i].value="";
         document.getElementsByTagName("input")[i].style.color='blue';
     }
-    document.body.style.backgroundImage= "urf(sky.png)";
+    document.body.style.backgroundImage= "urf(sky.jpg)";
     document.body.style.backgroundSize= "1800px 1000px";
 }
 
