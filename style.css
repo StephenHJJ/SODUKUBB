@@ -1,0 +1,81 @@
+.T{
+    background-color: pink;
+    text-align: center;
+    color: white;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(9, 40px);
+    grid-gap: 10px;
+    grid-template-rows: repeat(9, 40px);
+  } 
+
+
+  .sdt{
+    table-layout:fixed;
+    border: black 3px solid;
+    border-collapse: collapse;
+    width: 355px;
+    height: 355px;
+   /* background-image: url(sky.jpg);*/
+    vertical-align: middle;
+    text-align: left;
+    empty-cells: hide;
+    
+}
+.xxx{
+    grid-row: 1;
+    grid-column: 1;
+    background-color: black;
+
+}
+input.big {
+    FONT-SIZE: 25px;
+    border: none;
+    background-color: transparent;
+    WIDTH: 30px;
+    HEIGHT: 30px;
+    LINE-HEIGHT: 28px;
+    TEXT-ALIGN: center;
+    margin: 0px;
+    COLOR: rgb(0, 255, 213);
+    FONT-FAMILY: Verdana;
+
+}
+
+td.xx{
+    border-top:dimgrey 1px solid;
+    border-right: dimgrey 1px solid;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+td.xr{
+    border-top:dimgrey 1px solid;
+    border-right: black 2px solid;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+td.tx{
+    border-top: black 2px solid;
+    border-right:dimgrey 1px solid;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+td.txr{
+    border-top: black 2px solid;
+    border-right: black 2px solid;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
