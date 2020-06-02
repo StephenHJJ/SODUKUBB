@@ -4,42 +4,61 @@
     color: white;
 }
 
-.wrapper {
-    display: grid;
-    grid-template-columns: repeat(9, 40px);
-    grid-gap: 10px;
-    grid-template-rows: repeat(9, 40px);
-  } 
+body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+.wrapper{
+    width: 80%;
+    position: relative;
+    height: 80px;
 
-  .sdt{
+}
+
+.wrapper input{
+    width: 100%;
+    height: 100%;
+    color: coral;
+    padding-left: 20px;
+}
+.wrapper label{
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: coral;
+    pointer-events: none;
+    border-bottom: black 1px solid;
+}
+
+.sdt{
     table-layout:fixed;
     border: black 3px solid;
     border-collapse: collapse;
     width: 355px;
     height: 355px;
-   /* background-image: url(sky.jpg);*/
+    background-image: url(sky.jpg);
     vertical-align: middle;
     text-align: left;
     empty-cells: hide;
     
 }
-.xxx{
-    grid-row: 1;
-    grid-column: 1;
-    background-color: black;
 
-}
-input.big {
+
+.big {
     FONT-SIZE: 25px;
-    border: none;
     background-color: transparent;
     WIDTH: 30px;
     HEIGHT: 30px;
     LINE-HEIGHT: 28px;
     TEXT-ALIGN: center;
     margin: 0px;
-    COLOR: rgb(0, 255, 213);
+    COLOR: rgb(13, 43, 38);
     FONT-FAMILY: Verdana;
 
 }
