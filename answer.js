@@ -83,17 +83,17 @@ function isnotValidGrid(grid){
 
 function isValid(i,j,grid){
     for (var colum = 0; colum <9; colum++){
-        if ((grid[i][colum]==grid[i][j])&&(j!=colum)){
+        if ((grid[i][colum]==grid[i][j])&&(colum!=j)){
             return false
         }
     }
     for (var row = 0; row <9; row++){
-        if ((grid[row][j]==grid[i][j])&&(i!=row)){
+        if ((grid[row][j]==grid[i][j])&&(row!=i)){
             return false
         }
     }
     for (var row = Math.floor(i/3)*3; row <Math.floor(i/3)*3+3; row++){
-        for ( var colum=Math.floor(i/3)*3; colum<Math.floor(i/3)*3+3;colum++){
+        for ( var colum=Math.floor(j/3)*3; colum<Math.floor(j/3)*3+3;colum++){
             if ((grid[row][colum]==grid[i][j])&&(i!=row)&&(j!=colum))
             return false
         } 
@@ -111,7 +111,7 @@ function FreeZerocell(grid){
             }
         }
     }
-
+    return FreeZC
 
 }
 function search(grid){
@@ -129,7 +129,7 @@ function search(grid){
             grid[i][j] = 1;
         }
 
-        if (!isnotValid(i,j,grid)){
+        if (isValid(i,j,grid)){
             if (k+1 == numberofFreeCells){
                 return true
             }
